@@ -1,6 +1,6 @@
 {
   "name": "@acm-97/eslint-prettier-config",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Package for importing eslint and prettier configurations",
   "main": "src/index.js",
   "author": "acm-97",
@@ -19,6 +19,9 @@
     "prettier"
   ],
   "scripts": {
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc --noEmit false",
+    "build:cjs": "tsc --noEmit false --module commonjs --outDir dist/cjs",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "lint-fix": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\" --fix"
   },
