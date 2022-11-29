@@ -10,6 +10,11 @@ module.exports = {
   parserOptions: {
     project: './tsconfig.json',
     tsconfigRootDir: './',
+    ecmaVersion: 2020,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   rules: {
     '@typescript-eslint/no-unused-vars': 'off',
@@ -29,6 +34,14 @@ module.exports = {
     //prettier rules
     "prettier/prettier": [
       "error", {
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "useTabs": false,
+        "bracketSameLine": false,
+        "printWidth": 120,
+        "endOfLine": "auto",
+        "trailingComma":"all",
         "parser": "typescript"
       }
     ]

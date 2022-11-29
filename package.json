@@ -1,6 +1,6 @@
 {
   "name": "@acm-97/eslint-prettier-config",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Package for importing eslint and prettier configurations",
   "main": "src/index.js",
   "author": "acm-97",

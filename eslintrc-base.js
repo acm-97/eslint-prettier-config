@@ -14,14 +14,6 @@ module.exports = {
     es2020: true,
   },
   ignorePatterns: ['next.config.js', 'next-i18next.config.js'],
-  parserOptions: {
-    ecmaVersion: 2020,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
-  plugins: ['react', 'prettier', 'import'],
   rules: {
     'jsx-a11y/anchor-is-valid': 'off',
     'prefer-const': 'off',
@@ -63,20 +55,6 @@ module.exports = {
         },
       },
     ],
-
-    //prettier rules
-    "prettier/prettier": [
-      "error", {
-        "semi": true,
-        "singleQuote": true,
-        "tabWidth": 2,
-        "useTabs": false,
-        "bracketSameLine": false,
-        "printWidth": 120,
-        "endOfLine": "auto",
-        "trailingComma":"all",
-      }
-    ]
   },
   settings: {
     'import/resolver': {
