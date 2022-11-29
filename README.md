@@ -1,7 +1,6 @@
 # Eslint / Prettier Setup for @acm-97
 
 [![NPM version][npm-image]][npm-url]
-[![Build][github-build]][github-build-url]
 [![License][github-license]][github-license-url]
 
 These are my ESLint and Prettier settings for a React.js or Nextjs project.
@@ -121,5 +120,3 @@ Once you have done. You probably want your editor to lint and fix for you.
 [npm-image]: https://img.shields.io/npm/v/@acm-97/eslint-prettier-config
 [github-license]: https://img.shields.io/github/license/acm-97/react-snake-game
 [github-license-url]: https://github.com/acm-97/eslint-prettier-config/blob/main/LICENCE.md
-[github-build]: https://github.com/acm-97/eslint-prettier-config/actions/workflows/publish.yml/badge.svg
-[github-build-url]: https://github.com/acm-97/eslint-prettier-config/actions/workflows/publish.yml
