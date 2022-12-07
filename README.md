@@ -14,6 +14,7 @@ These are my ESLint and Prettier settings for a React.js or Nextjs project.
   - [How to use:](#how-to-use)
     - [JavaScript projects](#javascript-projects)
     - [TypeScript projects](#typescript-projects)
+    - [Add support for Next.JS](#add-support-for-nextjs)
   - [With VS Code](#with-vs-code)
 <!-- - [With VS Code](#with-vs-code) -->
 <!-- - [With Create React App](#with-create-react-app) -->
@@ -38,13 +39,23 @@ with yarn:
 yarn add -D @acm-97/eslint-prettier-config
 ```
 
+> **Note**: After installation, if you are only going to work with Javascript files, you can run one of the following commands to remove unnecessary packages and save space:\
+
+```npm
+npm remove @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript
+```
+
+```yarn
+yarn remove @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript
+```
+
 ## How to use:
 
 ### JavaScript projects
 
 ```json
 // in your "eslintrc.json" file
-// at the below json object
+// add the below json object
 {
   "extends": [
     "@acm-97/eslint-prettier-config"
@@ -70,7 +81,7 @@ yarn add -D @acm-97/eslint-prettier-config
 
 ```json
 // in your "eslintrc.json" file
-// at the below json object
+// add the below json object
 {
   "extends": [
     "@acm-97/eslint-prettier-config/typescript.js"
@@ -89,6 +100,21 @@ yarn add -D @acm-97/eslint-prettier-config
 "scripts": {
   "lint": "tsc --noEmit && eslint . --ext .js,.jsx,.ts,.tsx",
   "lint:fix": "npm run lint -- --fix",
+```
+
+### Add support for Next.JS
+
+First do: `yarn add -D eslint-config-next` or `npm install --dev eslint-config-next` and then:
+
+```json
+// update your "eslintrc.json" file
+{
+  "extends": [
+    ...
+
+    'next/core-web-vitals',
+  ]
+}
 ```
 
 ## With VS Code
