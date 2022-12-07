@@ -1,6 +1,5 @@
 module.exports = {
   extends: [
-    'next/core-web-vitals',
     'airbnb',
     'airbnb/hooks',
     'plugin:react/recommended',
