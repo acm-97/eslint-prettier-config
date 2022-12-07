@@ -34,7 +34,7 @@ npm install --dev @acm-97/eslint-prettier-config
 with yarn:
 
 ```yarn
-yar add -D @acm-97/eslint-prettier-config
+yarn add -D @acm-97/eslint-prettier-config
 ```
 
 ## [If you use JavaScript](#if-you-use-javascript)
