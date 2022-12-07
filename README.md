@@ -11,8 +11,9 @@ These are my ESLint and Prettier settings for a React.js or Nextjs project.
   - [Table of Contents](#table-of-contents)
   - [What it does](#what-it-does)
   - [Install](#install)
-  - [If you use JavaScript](#if-you-use-javascript)
-  - [If you use TypeScript](#if-you-use-typescript)
+  - [How to use:](#how-to-use)
+    - [JavaScript projects](#javascript-projects)
+    - [TypeScript projects](#typescript-projects)
   - [With VS Code](#with-vs-code)
 <!-- - [With VS Code](#with-vs-code) -->
 <!-- - [With Create React App](#with-create-react-app) -->
@@ -37,38 +38,39 @@ with yarn:
 yarn add -D @acm-97/eslint-prettier-config
 ```
 
-## [If you use JavaScript](#if-you-use-javascript)
+## How to use:
+
+### JavaScript projects
 
 ```json
+// in your "eslintrc.json" file
+// at the below json object
 {
   "extends": [
     "@acm-97/eslint-prettier-config"
   ]
 }
-```
 
-if the above does not work for you, try this way:
-
-```json
+// if the above does not work for you, try with this:
 {
   "extends": [
     "./node_modules/@acm-97/eslint-prettier-config"
   ]
 }
-```
 
-in the ```package.json``` you can add two scripts to your package.json to lint and/or fix your code:
-
-```json
+// in the "package.json" file
+// you can add two scripts to your package.json to lint and/or fix your code:
 "scripts": {
   "lint": "eslint .",
   "lint:fix": "npm run lint -- --fix",
 },
 ```
 
-## [If you use TypeScript](#if-you-use-typescript)
+### TypeScript projects
 
 ```json
+// in your "eslintrc.json" file
+// at the below json object
 {
   "extends": [
     "@acm-97/eslint-prettier-config/typescript.js"
@@ -77,11 +79,8 @@ in the ```package.json``` you can add two scripts to your package.json to lint a
     "project": ["./tsconfig.json"]
   }
 }
-```
 
-if the above does not work for you, try this way:
-
-```json
+// if the above does not work for you, try with this:
 {
   "extends": [
     "./node_modules/@acm-97/eslint-prettier-config/typescript.js"
@@ -90,15 +89,12 @@ if the above does not work for you, try this way:
     "project": ["./tsconfig.json"]
   }
 }
-```
 
-in the ```package.json``` you can add two scripts to your package.json to lint and/or fix your code:
-
-```json
+// in the "package.json" file
+// you can add two scripts to your package.json to lint and/or fix your code:
 "scripts": {
   "lint": "tsc --noEmit && eslint . --ext .js,.jsx,.ts,.tsx",
   "lint:fix": "npm run lint -- --fix",
-},
 ```
 
 ## With VS Code
