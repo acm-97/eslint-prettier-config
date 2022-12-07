@@ -74,20 +74,14 @@ yarn add -D @acm-97/eslint-prettier-config
 {
   "extends": [
     "@acm-97/eslint-prettier-config/typescript.js"
-  ],
-  "parserOptions": {
-    "project": ["./tsconfig.json"]
-  }
+  ]
 }
 
 // if the above does not work for you, try with this:
 {
   "extends": [
     "./node_modules/@acm-97/eslint-prettier-config/typescript.js"
-  ],
-  "parserOptions": {
-    "project": ["./tsconfig.json"]
-  }
+  ]
 }
 
 // in the "package.json" file
@@ -101,10 +95,12 @@ yarn add -D @acm-97/eslint-prettier-config
 
 Once you have done. You probably want your editor to lint and fix for you.
 
-1. Install the [ESLint package](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-2. Now we need to setup some VS Code settings. Create a `.vscode` folder at your root project, and create a `settings.json` file in this folder. Then, add this little config:
+> Note: If eslint configuration does not work you may have to restore uor VS Code.
 
-```js
+1. Install the [ESLint package](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+2. Now we need to setup some VS Code settings. Go to the `settings.json` file. Then, add this little config and then:
+
+```json
 {
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
