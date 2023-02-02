@@ -27,6 +27,8 @@ module.exports = {
     'no-unused-expressions': 'off',
     'no-plusplus': 'off',
     'no-useless-return': 'off',
+    "no-unused-vars": "off",
+    "jsx-a11y/control-has-associated-label": "off",
 
     // react rules
     'react/function-component-definition': 'off',
@@ -38,11 +40,14 @@ module.exports = {
     'react/require-default-props': 'off',
     'react/no-array-index-key': 'off',
     'react/react-in-jsx-scope': 'off',
+    "react/jsx-props-no-spreading": "off",
+    "react/forbid-prop-types": "off",
 
     // import rules
     'import/extensions': 'off',
     'import/no-cycle': [0, { ignoreExternal: true }],
     'import/prefer-default-export': 'off',
+    "import/no-unresolved": "off",
     'import/order': [
       'warn',
       {
