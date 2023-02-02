@@ -7,14 +7,22 @@ module.exports = {
     //prettier rules
     "prettier/prettier": [
       "error", {
-        "semi": true,
+        "arrowParens": "avoid",
+        "bracketSpacing": false,
+        "endOfLine": "lf",
+        "htmlWhitespaceSensitivity": "css",
+        "insertPragma": false,
+        "jsxBracketSameLine": false,
+        "jsxSingleQuote": false,
+        "printWidth": 100,
+        "proseWrap": "always",
+        "quoteProps": "as-needed",
+        "requirePragma": false,
+        "semi": false,
         "singleQuote": true,
         "tabWidth": 2,
-        "useTabs": false,
-        "bracketSameLine": false,
-        "printWidth": 120,
-        "endOfLine": "auto",
-        "trailingComma":"all",
+        "trailingComma": "all",
+        "useTabs": false
       }
     ]
   },
