@@ -7,6 +7,7 @@ module.exports = {
     //prettier rules
     "prettier/prettier": [
       "error", {
+        'endOfLine': 'auto',
         "arrowParens": "avoid",
         "bracketSpacing": false,
         "endOfLine": "lf",
