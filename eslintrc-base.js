@@ -29,6 +29,8 @@ module.exports = {
     'no-useless-return': 'off',
     "no-unused-vars": "off",
     "jsx-a11y/control-has-associated-label": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
 
     // react rules
     'react/function-component-definition': 'off',
@@ -42,6 +44,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     "react/jsx-props-no-spreading": "off",
     "react/forbid-prop-types": "off",
+    "react/jsx-no-bind": "off",
 
     // import rules
     'import/extensions': 'off',
